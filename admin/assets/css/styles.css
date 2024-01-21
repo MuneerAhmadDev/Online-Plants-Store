@@ -1,0 +1,170 @@
+:root {
+  --bg-color: #d2d4d2;
+  --color-green: rgb(1, 144, 1);
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+
+
+
+#wrapper {
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  background-color: var(--bg-color);
+  align-items: flex-start;
+  gap: 1;
+}
+
+/* ==================================================== Sidebar Style ==================================================== */
+
+#sidebar-wrapper {
+  min-width: 15rem;
+  height: 100vh;
+  margin-left: -15rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #0d0f23;
+  position: sticky;
+  top: 0;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper::-webkit-scrollbar {
+  width: 2px;
+}
+
+#sidebar-wrapper::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 10px;
+}
+
+/* ---------- Logo ---------- */
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+  color: var(--color-green);
+}
+
+/* ---------- Menu ---------- */
+
+.list-group {
+  width: 15rem;
+  border-radius: 0px;
+}
+
+.list-group .list-group-item {
+  border: none;
+  background: none;
+  border-radius: 0px;
+  padding: 6px;
+}
+
+
+.list-group-item>a {
+  padding: 10px 20px;
+  width: 100px;
+  color: white;
+  border-radius: 2px;
+}
+
+
+.active {
+  background-color: rgba(0, 0, 0, 0.10);
+}
+
+
+/* ==================================================== Sidebar Style ==================================================== */
+
+/* ==================================================== Page Content Style ==================================================== */
+
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+#menu-toggle {
+  cursor: pointer;
+}
+
+
+/* ==================================================== Page Content Style ==================================================== */
+
+
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+
+
+
+
+
+
+/* ======================================== General Class ======================================== */
+
+.text-green {
+  color: var(--color-green);
+}
+
+
+.btn {
+  border-radius: 0px;
+  border-radius: 4px;
+}
+
+
+.form-control {
+  border-radius: 0;
+  border-radius: 2px;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--color-green);
+  background-color: #f3f3f3;
+}
+
+.form-select {
+  border-radius: 0px;
+  border-radius: 4px;
+}
+
+#navbar {
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  box-shadow: 3px 21px 24px -18px rgba(0, 0, 0, 0.75);
+}
+
+
+.modal {
+  z-index: 1200;
+}
+
+.accordion-item .accordion-button {
+  background-color: #0d0f23;
+  color: white;
+}
+
+.accordion-item .accordion-collapse {
+  background-color: #0d0f23;
+  color: black;
+  border: none;
+}

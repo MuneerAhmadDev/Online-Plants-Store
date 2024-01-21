@@ -1,0 +1,50 @@
+.form-control {
+    border-radius: 0px;
+    border-radius: 2px;
+}
+
+.btn {
+    border-radius: 0px;
+    border-radius: 4px;
+}
+
+#text-trun {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    color: black;
+    margin-right: 20px;
+    border-radius: 100%;
+}
+
+.fb:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #1877F2;
+}
+
+.wp:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #25D366;
+}
+
+.insta:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #C13584;
+}
+
+.tw:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #1DA1F2;
+}
+
+.yt:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #FF0000;
+}
